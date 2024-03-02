@@ -1,0 +1,94 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.table-wrapper {
+  position: relative;
+  border-radius: 10px;
+}
+
+.table-wrapper tbody::-webkit-scrollbar {
+  width: 10px;
+}
+.table-wrapper tbody::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.table-wrapper tbody::-webkit-scrollbar-track {
+  background: #e4e4e4;
+}
+
+.table-wrapper thead {
+  background: #15669f;
+  color: #fff;
+}
+
+.table-wrapper thead tr {
+  display: block;
+}
+
+.table-wrapper th:nth-child(1) {
+  width: 270px;
+}
+.table-wrapper th:nth-child(2) {
+  width: 310px;
+}
+.table-wrapper th:nth-child(3) {
+  width: 270px;
+}
+
+.table-wrapper tbody {
+  display: block;
+  overflow: auto;
+  height: 500px;
+}
+
+.table-wrapper th {
+  position: relative;
+  cursor: pointer;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.table-wrapper tr:nth-child(even) {
+  background: #ebebeb;
+}
+
+.table-wrapper .th-sort-asc::before {
+  content: "\25b4";
+  position: absolute;
+  right: 10%;
+  bottom: 25px;
+  color: #0fb2ff;
+}
+.table-wrapper .th-sort-asc::after {
+  content: "\25be";
+  position: absolute;
+  right: 10%;
+  bottom: 15px;
+}
+
+.table-wrapper .th-sort-desc::before {
+  content: "\25b4";
+  position: absolute;
+  right: 10%;
+  bottom: 25px;
+}
+.table-wrapper .th-sort-desc::after {
+  content: "\25be";
+  position: absolute;
+  right: 10%;
+  bottom: 15px;
+  color: #0fb2ff;
+}
+
+.table-wrapper .th-sort-asc,
+.table-wrapper .th-sort-desc {
+  background: #0c5181;
+}

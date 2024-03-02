@@ -1,0 +1,16 @@
+.notification {
+  position: absolute;
+  display: none;
+  padding: 20px;
+  top: 20px;
+  right: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  background: #c60c30;
+  color: #fff;
+}
+
+.notification.show {
+  display: block;
+}

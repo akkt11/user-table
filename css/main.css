@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./reset.css";
+@import "./table.css";
+@import "./loader.css";
+@import "./notification.css";
+@import "./button.css";
+
+body {
+  font-family: "Montserrat";
+  color: #616161;
+  background-color: #d1d1d1;
+}
+
+.user {
+  overflow: hidden;
+  padding: 10px;
+}
+
+.user__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+  .users__container {
+    width: 100%;
+  }
+
+  .table-wrapper {
+    width: 100%;
+  }
+
+  .table-wrapper thead tr {
+    display: none;
+  }
+
+  .table-wrapper thead {
+    display: block;
+    height: 10px;
+    background: #15669f;
+  }
+
+  .table-wrapper tr {
+    display: block;
+    padding: 20px;
+  }
+
+  .table-wrapper td {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 0;
+    font-size: 15px;
+    padding-left: 20%;
+  }
+
+  .table-wrapper td::before {
+    content: attr(data-title);
+    text-transform: capitalize;
+    position: absolute;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    left: 0;
+    color: #15669f;
+  }
+
+  .table-wrapper td:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .notification {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .table-wrapper td {
+    font-size: 12px;
+  }
+  .table-wrapper td::before {
+    font-size: 10px;
+  }
+}
